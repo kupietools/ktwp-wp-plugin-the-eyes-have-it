@@ -1,0 +1,190 @@
+.ktwp_eyesHaveIt-icon svg /* replace SVG with whatever tab content is  */ { 
+/*style tab content */
+  color: #1a1a1a;
+  filter: drop-shadow( 1px 1px 2px rgba(255, 255, 0, .8));
+height:16px;
+width:16px;
+}
+
+
+        .ktwp_eyesHaveIt-panel {
+          /* panel sizing, padding etc. here */
+			max-width: 90vw;
+max-height: 65vh;
+overflow-y: auto;
+			/* those last 3 for iOS */
+        }
+        
+        .ktwp_eyesHaveIt-panel label,
+        .ktwp_eyesHaveIt-panel input,
+        .ktwp_eyesHaveIt-panel .value,
+        .ktwp_eyesHaveIt-panel button {
+            font-size: 12px !important;
+        }
+        .slider-control, .control-group {
+             margin: 0 0 !important; /* was 10px 0 */
+        }
+
+
+
+.ktwp_eyesHaveIt-control {
+    position: fixed;
+    left: 0px;
+    top: 140px;
+    font-size: 14px !important;
+    z-index: 10000 !important;
+	display:none;
+	
+}
+
+.ktwp_eyesHaveIt-icon,   .ktwp_eyesHaveIt-panel {box-shadow: /*0 4px 8px rgba(0, 0, 0, 0.4)*/ 0 2px 8px rgba(0, 0, 0, 0.8), 0 0 24px white;}
+
+.ktwp_eyesHaveIt-icon {
+	 /* ORIG
+	  width: 24px;
+    height: 24px;
+    background: #808080;
+    border-radius: 3px; */
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	box-shadow: black 0px 0px 8px, white 0px 0px 30px !important;
+	width: 36px;
+	height: 30px;
+	background: rgb(255, 255, 255);
+	border-radius: 0px 6px 6px 0px;
+border: 0.25px solid #eee;
+	padding:0;
+}
+.ktwp_eyesHaveIt-icon:hover {
+	background: #ffd;
+	/* box-shadow: 0px 0px 16px #fff !important; Nah */
+}
+.ktwp_eyesHaveIt-icon .ktwp_eyesHaveIt-hover-text {
+    position: absolute;
+    left: 38px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #808080;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 3px;
+    white-space: nowrap;
+    opacity: 0;
+    width: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.ktwp_eyesHaveIt-icon:hover .ktwp_eyesHaveIt-hover-text:not(*:hover) {
+	opacity: 1;
+	width: 130px;
+	text-align: center;
+}
+
+.ktwp_eyesHaveIt-panel {
+    display: none;
+    position: fixed;
+	z-index: 999999;
+    /* ORIG bottom: 30px;
+    left: 0; */
+top: 12px;
+    left: 12px;
+    width: fit-content; /* MAKE THIS YOUR PANEL WIDTH */
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.35);
+    padding: 15px;
+z-index: 999999;
+overflow: visible;
+}
+
+.ktwp_eyesHaveIt-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.ktwp_eyesHaveIt-panel-content {display:grid; grid-template-columns:auto auto; grid-column-gap:6px;}
+
+.ktwp_eyesHaveIt-close-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #666;
+
+	position: absolute;
+	/* display: block; */
+	right: 0;
+	top: 0;
+
+
+}
+
+     #ktwp-wp-eyes-eyes-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            border: 2px solid #333;
+            border-radius: 15px;
+            padding: 25px;
+            padding-top: 40px; /* Extra space for the close button */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            display: flex; /* Aligns eyes side-by-side */
+            gap: 5px; /* Space between the eyes */
+            z-index: 1000;
+        }
+
+        /* Utility class to hide the container */
+        .ktwp-wp-eyes-hidden {
+            display: none !important;
+        }
+
+        /* Styling for the capsule-shaped eye */
+        .ktwp-wp-eyes-eye {
+            width: 45px;
+            height: 75px;
+            background-color: #f8f8f8;
+            border: 5px solid #333;
+            border-radius: 25px; /* Creates the capsule shape */
+            position: relative;
+            overflow: ktwp-wp-eyes-hidden; /* Ensures pupil doesn't go outside the eye */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                        transition: transform 0.035s ease-in;
+        }
+
+        /* Styling for the pupil */
+        .ktwp-wp-eyes-pupil {
+            width: 15px;
+            height: 15px;
+            background-color: #111;
+            border-radius: 50%; /* Makes it a circle */
+            position: absolute;
+            /* Smooth transition for pupil movement */
+            transition: transform 0.1s ease-out;
+        }
+
+     
+        /* Styling for the link that opens the eyes */
+        #open-eyes-link {
+            font-size: 1.5em;
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #e9e9e9;
+            cursor: pointer;
+            text-decoration: none;
+            color: #333;
+        }
+        #open-eyes-link:hover {
+            background-color: #dcdcdc;
+        }
+ 
