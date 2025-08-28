@@ -118,7 +118,7 @@ overflow: visible;
     color: #666;
 
 	position: absolute;
-	/* display: block; */
+	/~ display: block; ~/
 	right: 0;
 	top: 0;
 
