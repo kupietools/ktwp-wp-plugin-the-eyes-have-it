@@ -109,7 +109,7 @@ overflow: visible;
 }
 
 .ktwp_eyesHaveIt-panel-content {display:grid; grid-template-columns:auto auto; grid-column-gap:6px;}
-
+/* was
 .ktwp_eyesHaveIt-close-button {
     background: none;
     border: none;
@@ -123,7 +123,19 @@ overflow: visible;
 	top: 0;
 
 
+} */
+.ktwp_eyesHaveIt-panel-header > .ktwp_eyesHaveIt-close-button {
+	background: none;
+	border: none;
+	font-size: 24px !important;
+	cursor: pointer;
+	color: #666;
+	position: absolute;
+	/* display: block; */
+	right: 6px;
+	top: 6px;
 }
+
 
      #ktwp-wp-eyes-eyes-container {
             position: fixed;
