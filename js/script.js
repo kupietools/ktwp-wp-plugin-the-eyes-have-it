@@ -85,7 +85,7 @@ function oncePanelOpen(panel) {
         }
         
         // This function performs the blink animation
-        function blink() {
+        function blinkEyes() {
             // Close the eyes by scaling them vertically
             eyes.forEach(eye => {
                 eye.style.transform = 'scaleY(0.1)';
@@ -121,7 +121,7 @@ function oncePanelOpen(panel) {
             clearTimeout(blinkTimeoutId);
             // Set a random time for the next blink (e.g., between 2 and 10 seconds)
             const randomInterval = Math.random() * 5000 + 8000;
-            blinkTimeoutId = setTimeout(blink, randomInterval);
+            blinkTimeoutId = setTimeout(blinkEyes, randomInterval);
         }
         
                 function ktwp_wp_eyes_moveThem(e)  {

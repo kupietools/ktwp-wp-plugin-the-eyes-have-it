@@ -109,8 +109,8 @@ overflow: visible;
 }
 
 .ktwp_eyesHaveIt-panel-content {display:grid; grid-template-columns:auto auto; grid-column-gap:6px;}
-/* was
-.ktwp_eyesHaveIt-close-button {
+
+.ktwp_eyesHaveIt-close-button { /* not using larger close button like the rest of the plugins use; didn't look good with this one because no header and eyes take up too much of panel */
     background: none;
     border: none;
     font-size: 20px;
@@ -118,23 +118,11 @@ overflow: visible;
     color: #666;
 
 	position: absolute;
-	/~ display: block; ~/
+	/* display: block; */
 	right: 0;
 	top: 0;
 
-
-} */
-.ktwp_eyesHaveIt-panel-header > .ktwp_eyesHaveIt-close-button {
-	background: none;
-	border: none;
-	font-size: 24px !important;
-	cursor: pointer;
-	color: #666;
-	position: absolute;
-	/* display: block; */
-	right: 6px;
-	top: 6px;
-}
+} 
 
 
      #ktwp-wp-eyes-eyes-container {

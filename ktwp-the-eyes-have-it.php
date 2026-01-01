@@ -87,7 +87,7 @@ $blink = get_option('ktwp_eyesHaveIt_checkbox_1','1'); /* default checked, if ne
 // Add the control panel HTML and required scripts/styles
 function ktwp_eyesHaveIt_enqueue_assets() {
     wp_enqueue_style('ktwp_eyesHaveIt-styles', plugins_url('css/style.css', __FILE__));
-    wp_enqueue_script('ktwp_eyesHaveIt-script', plugins_url('js/script.js', __FILE__), array('jquery'), '1.0', true);
+    wp_enqueue_script('ktwp_eyesHaveIt-script', plugins_url('js/script.js', __FILE__), array('jquery'), '1.0', array('in_footer' => true,'strategy'  => 'defer'));
 }
 add_action('wp_enqueue_scripts', 'ktwp_eyesHaveIt_enqueue_assets');
 
