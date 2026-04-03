@@ -165,4 +165,14 @@ function oncePanelOpen(panel) {
             });
         }
     });
+
+let ktwpparams = new URLSearchParams(document.location.search);
+let ktwp_param = ktwpparams.get("kupietools");
+			
+if (ktwp_param=="eyes")
+			{	
+console.log("param",ktwp_param)
+document.querySelector('.ktwp_eyesHaveIt-panel').style.display="block";}
+
+
 })();
